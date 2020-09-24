@@ -23,6 +23,8 @@ public class Showprogress extends JPanel {
            }
        };
 
+
+
        enableSearchButtonTask = new Runnable() {
            @Override
            public void run() {
@@ -52,6 +54,7 @@ public class Showprogress extends JPanel {
     private void launchHelper(){
         Thread thread = new Thread(runWorkRunnable, "ShowProgress helper");
         thread.start();
+
     }
 
 
